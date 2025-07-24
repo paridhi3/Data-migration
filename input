@@ -1,0 +1,10 @@
+{
+  "operation": "MIGRATE",  // or "ANALYZE" or "VALIDATE"
+  "source_db_type": "SQL Server",
+  "source_db_name": "customer_warehouse",
+  "target_db_type": "Snowflake",
+  "target_db_name": "customer_warehouse_copy",
+  "objects": ["Tables", "Stored Procedures", "Views"],  // optional
+  "validation_type": "both",  // optional, only needed for VALIDATE
+  "test_case_file": "path/to/test_cases.csv"  // optional
+}
